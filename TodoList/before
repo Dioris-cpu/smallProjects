@@ -1,0 +1,44 @@
+* HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <input class="item" type="text" />
+        <input id="eventClick" type="button" value="click me" />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+*  Javascript
+
+const input = document.querySelector('input');
+const log = document.getElementById('Task');
+
+const updateValue = (e) => {
+  log.textContent = e.target.value;
+}
+input.addEventListener('input', updateValue);
+
+document.addEventListener("DOMContentLoaded", () => {
+    // our code will go inside here
+
+// button to add new item
+let addButton = document.querySelector("#add");
+// input field to add new item
+let addInput = document.querySelector("#item");
+
+
+
+  });
